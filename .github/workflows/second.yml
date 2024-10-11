@@ -1,0 +1,8 @@
+name: Issue Trigger
+on: issues
+jobs:
+  issue:
+    runs-on: ubuntu-latest
+    steps:
+      - name: display GitHub context
+        run: echo "${{ toJSON( github )}}"
