@@ -15,7 +15,7 @@ jobs:
 #      - name: Run lint
 #        run: lint
   test:
-    needs: lint
+#    needs: lint
     runs-on: Ubuntu-latest
     steps:
       - name: Get Code
